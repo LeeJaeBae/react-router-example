@@ -1,14 +1,11 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
+import {useRouter} from "../../Routes";
 
 const Header = () => {
     return (
         <div>
-            <Link to={'/'}>Home</Link>
-            <br/>
-            <Link to={'/MENU1'}>MENU1</Link>
-            <br/>
-            <Link to={'/MENU2'}>MENU2</Link>
+            {useRouter()}
         </div>
     );
 };

@@ -1,12 +1,12 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import {Home} from "../Routes";
+import Routes from "../Routes";
 
 function App() {
     return (
-        <Router>
+        <Router basename={''}>
             <Switch>
-                <Route exact path={'/'} component={Home}/>
+                <Route exact {...Routes.home}/>
             </Switch>
         </Router>
     );
